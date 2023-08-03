@@ -1,0 +1,143 @@
+[
+  {
+    "question_id": "46a884d5-fb1e-47ab-bf80-9bddad05a7f4",
+    "ide_session_id": "ad32f830-0a3f-4c47-a5d4-a08306c95d03",
+    "short_text": "Movie Database App",
+    "question_key": "movie_database_app",
+    "question_text": "Develop an application based on video-on-demand websites that provides an extensive database of available content. It should consist of various pages and a global navbar.\n\n- Popular Movies Page (Home Page)\n- Top Rated Movies Page\n- Upcoming Movies Page\n- Single Movie Details Page\n- Searched Movies Page\n\n<br/>\n### List of Features\n\n#### Global Navbar:\n\n- Users should be able to see a navbar at the top of every page.\n- Users should be able to see the title “movieDB” at the left side of the navbar.\n- Users should be able to view navigation buttons, including Popular, Top Rated, and Upcoming, in the navbar.\n- Users should be able to navigate to Popular (`/`), Top Rated (`/top-rated`), and Upcoming (`/upcoming`) Routes by clicking on the respective buttons.\n- Users should be able to see a search bar and a search button inside the navbar, where they can enter their search queries.\n\n#### Popular Movies Page (Home Page):\n\n- Users should be able to view a grid of movie posters, arranged in multiple rows and columns, fetched from the **popular movies API**.\n- Each movie poster should include an image of the movie, its name, its rating, and a `View Details` button.\n\n#### Top Rated Movies Page:\n\n- Users should be able to view a grid of movie posters, arranged in multiple rows and columns, fetched from the **top rated movies API**.\n- Each movie poster should include an image of the movie, its name, its rating, and a `View Details` button.\n\n#### Upcoming Movies Page:\n\n- Users should be able to view a grid of movie posters, arranged in multiple rows and columns, fetched from the **upcoming movies API**.\n- Each movie poster should include an image of the movie, its name, its rating, and a `View Details` button.\n\n#### Single Movie Details Page:\n\n- When users click on the `View Details` button of a specific movie poster on any movie page, it should open a new page displaying the details of the respective movie.\n- Users should be able to see two sections:\n  - Movie details section\n  - Cast details section\n- The movie details section should include the movie's name, image, ratings, duration, genre, release date, and an overview, all of which will be fetched from the **movie details API**.\n- The cast details section should display a grid of cast members, arranged in multiple rows and columns, retrieved from the **movie cast details API**.\n- Each cast member's details should include their image, their original name, and their character name in the movie.\n\n#### Searched Movies Page:\n\n- The searched movies page should only be displayed when a search is initiated.\n- Users should be able to view a grid of movie posters, arranged in multiple rows and columns, fetched from the **searched movies API**.\n- Each movie poster should include an image of the movie, its name, its rating, and a `View Details` button.\n\n**Note:**\n\n- Every page should feature a global nav bar at the top.\n- Initially, users should be able to see the Popular Page (Home Page) upon accessing the website.\n- Each page corresponds to a different route.\n\n### Instructions:\n\n- Upload the project on Codesandbox (https://codesandbox.io/) and submit it using the code sandbox link. This is mandatory, without this, the submission will not be accepted.\n- The project must be responsive with decent CSS.\n- It is not necessary that the colors should match the images above. Use your imagination and try to make it as you like.\n- Pagination is required.\n- If you are a candidate with more than 6 months of experience then using Redux for state management purposes is a MUST.\n- If you are a fresher then can directly do API calls in the components themselves.\n- Make sure the components are reusable wherever possible.\n\n### API Details:\n\n- You should generate your own `API_KEY` by visiting https://www.themoviedb.org/documentation/api\n\n- Follow the below reference to build an image URL [https://developer.themoviedb.org/docs/image-basics](https://developer.themoviedb.org/docs/image-basics)\n\n### APIs\n\n- Get popular Movies:\n\n```api\nhttps://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1\n```\n\n- Get Top Rated Movies:\n\n```api\nhttps://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1\n```\n\n- Get Upcoming Movies:\n\n```api\nhttps://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1\n```\n\n- Get Single Movie Details:\n\n```api\nhttps://api.themoviedb.org/3/movie/${MOVIE_ID}?api_key=${API_KEY}&language=en-US\n```\n\n- Get Movie Cast Details:\n\n```api\nhttps://api.themoviedb.org/3/movie/${MOVIE_ID}/credits?api_key=${API_KEY}&language=en-US\n```\n\n- Get Searched Movies:\n\n```api\nhttps://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${MOVIE_NAME}&page=1\n```\n\n<br/>\n**Note:** Make sure to replace `${API_KEY}`, `${MOVIE_ID}` and `${MOVIE_NAME}` with actual values when using these APIs.\n\n<br/>\n#### Submission Form:\n\n<center>Click the below button and submit your code sandbox link</center>\n<br>\n<a target=_blank_ href=\"https://forms.ccbp.in/project-submission-form-project2\">\n  <center><button style=\"color: #fff; border: none; cursor: pointer; width: 218px; height: 34px; background-color: rgb(22, 101, 216); border-radius: 5.4px; box-shadow: rgb(0 0 0 / 36%) 0px 2px 4px 0px;font-family: Inter;font-size: 14px;color: rgb(255, 255, 255);font-weight: 500;letter-spacing: 0.5px;text-transform: uppercase;\">\n    SUBMIT\n  </button>\n  </center>\n</a>\n\n<br/>\n<center>**Follow the clean code guidelines**</center>\n",
+    "content_type": "MARKDOWN",
+    "toughness": "EASY",
+    "language": "ENGLISH",
+    "question_type": "IDE_BASED_CODING",
+    "question_asked_by_companies_info": [],
+    "question_format": "CODING_PRACTICE",
+    "test_cases": [
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_1",
+        "display_text": "When the Page is opened, an HTTP GET request should be made to the given \"getPopularMoviesURL\" to get the list of all popular movies ",
+        "weightage": 10
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_2",
+        "display_text": "When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \"movieDB\"",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_3",
+        "display_text": "When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \"Popular\"",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_4",
+        "display_text": "When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \"Top Rated\"",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_5",
+        "display_text": "When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \"Upcoming\"",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_6",
+        "display_text": "When the HTTP GET request is successful, then the page should consist of an HTML search input element",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_7",
+        "display_text": "When the HTTP GET request is successful, then the page should consist of an HTML button element with text content as \"Search\"",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_8",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Popular\", then the page should consist of an HTML image element with src as the value of the key \"poster_path\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_9",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Popular\", then the page should consist of an HTML element with text content as \"title\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_10",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Popular\", then the page should consist of an HTML element with text content as value of the key \"vote_average\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_11",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Popular\", then the page should consist of an HTML button element with text content as \"View Details\"",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_12",
+        "display_text": "When the HTTP GET request is successful and an input is given in Search bar and \"Search\" button is clicked, the page should display the movies fetched from the Search API",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_13",
+        "display_text": "When the Page is opened, an HTTP GET request should be made to the given \"topRatedMoviesURL\" to get the list of all top rated movies",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_14",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Top Rated\", then the page should consist of an HTML image element with src as the value of the key \"poster_path\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_15",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Top Rated\", then the page should consist of an HTML element with text content as \"title\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_16",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Top Rated\", then the page should consist of an HTML element with text content as value of the key \"vote_average\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_17",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Top Rated\", then the page should consist of an HTML button element with text content as \"View Details\"",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_18",
+        "display_text": "When the Page is opened, an HTTP GET request should be made to the given \"upcomingMoviesURL\" to get the list of all upcoming movies",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_19",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Upcoming\", then the page should consist of an HTML image element with src as the value of the key \"poster_path\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_20",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Upcoming\", then the page should consist of an HTML element with text content as \"title\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_21",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Upcoming\", then the page should consist of an HTML element with text content as value of the key \"vote_average\" received from the response within \"results\" list",
+        "weightage": 5
+      },
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_22",
+        "display_text": "When the HTTP GET request is successful and the active page is \"Upcoming\", then the page should consist of an HTML button element with text content as \"View Details\"",
+        "weightage": 5
+      }
+    ],
+    "multimedia": [],
+    "solutions_metadata": [
+      {
+        "ide_session_id": "1373e4e2-fec2-4659-8280-1ec83e0c3b2c",
+        "order": 1,
+        "title": {
+          "content": "Movie Database App",
+          "content_type": "MARKDOWN"
+        },
+        "description": {
+          "content": "An approach to develop Movie Database App",
+          "content_type": "MARKDOWN"
+        }
+      }
+    ],
+    "hints": []
+  }
+]

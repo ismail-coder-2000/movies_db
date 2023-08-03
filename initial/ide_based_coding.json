@@ -1,0 +1,38 @@
+[
+  {
+    "question_id": "46a884d5-fb1e-47ab-bf80-9bddad05a7f4",
+    "ide_session_id": "ad32f830-0a3f-4c47-a5d4-a08306c95d03",
+    "short_text": "Movie Database App",
+    "question_key": "movie_database_app",
+    "question_text": "### Movie DB Application\n\n**Introduction**\n\nCreate a web panel consisting of four different pages and a global search in the Navbar.\n\n1. Home Page / Popular Movie Page\n\n1. Top Rated Page\n\n1. Upcoming Movie Page\n\n1. Single Movie Detail Page\n\n1. Searched Movie Page (UI will be same as Home Page)\n\n**Home Page / Popular Movie Page**\n\n![](https://res.cloudinary.com/do4qwwms8/image/upload/v1688368618/popular_adgbpo.jpg)\n\n**Top-Rated Movie Page**\n\n![](https://res.cloudinary.com/do4qwwms8/image/upload/v1688368618/toprated_isfjpd.jpg)\n\n**Upcoming Movie Page**\n\n![](https://res.cloudinary.com/do4qwwms8/image/upload/v1688368618/upcoming_scwlks.jpg)\n\n**Single Movie Detail Page**\n\nDetails of a single movie should look like the image given below\n\n![](https://res.cloudinary.com/do4qwwms8/image/upload/v1688368618/singlemovie_ohetjz.jpg)\n\nThis is the cast of the single movie that should be seen like this on the same page.\n\n![](https://res.cloudinary.com/do4qwwms8/image/upload/v1688368618/castdetails_jp3aeb.jpg)\n\n**Instructions**\n\n- Upload the project on Codesandbox ([https://codesandbox.io/](https://codesandbox.io/)) and submit it using the code sandbox link. This is mandatory, without this the submission will not be accepted.\n\n- The project must be responsive with decent CSS.\n\n- It is not necessary that the colors should match the images above. Use your imagination and try to make it as you like.\n\n- Pagination is required.\n\n- If you are a candidate with more than **6 months of experience** then using Redux for state management purposes is a **MUST.**\n\n- If you are a fresher then can directly do API calls in the components itself **.**\n\n- Make sure the components are reusable wherever possible.\n\n**API Details**\n\nYou can use **c45a857c193f6302f2b5061c3b85e743** as an API key for your API calls OR you can generate your own by visiting\n\n[https://www.themoviedb.org/documentation/api](https://www.themoviedb.org/documentation/api).\n\n##### Get all movies\n\n```api\nhttps://api.themoviedb.org/3/movie/popular?api\\_key=${Api\\_key}&language=en-US&page=1\n```\n\n##### For Image Path:- You need to add a base domain which is given below\n\n```url\nhttps://image.tmdb.org/t/p/w500\n```\n\nEg:- For your Reference\n\n'[https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg](https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg)'\n\n[bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg](https://image.tmdb.org/t/p/w500/bcCBq9N1EMo3daNIjWJ8kYvrQm6.jpg)-\\> this will be the coming from API\n\n##### Get movie detail\n\n```api\nhttps://api.themoviedb.org/3/movie/${movie\\_id}?api\\_key=${Api\\_key}&language=en-US\n```\n\n##### Get movie cast detail\n\n```api\nhttps://api.themoviedb.org/3/movie/${movie\\_id}/credits?api\\_key=${Api\\_key}&language=en-US\n```\n\n##### Get upcoming movies\n\n```api\nhttps://api.themoviedb.org/3/movie/upcoming?api\\_key=${Api\\_key}&language=en-US&page=1\n```\n\n##### Get top-rated movies\n\n```api\nhttps://api.themoviedb.org/3/movie/top\\_rated?api\\_key=${Api\\_key}&language=en-US&page=1\n```\n\n##### Get search result\n\n```api\nhttps://api.themoviedb.org/3/search/movie?api\\_key=${Api\\_key}&language=en-US&query=${movie\\_name}&page=1\n```\n",
+    "content_type": "MARKDOWN",
+    "toughness": "EASY",
+    "language": "ENGLISH",
+    "question_type": "IDE_BASED_CODING",
+    "question_asked_by_companies_info": [],
+    "question_format": "CODING_PRACTICE",
+    "test_cases": [
+      {
+        "test_case_enum": "RJSCPNLIOG_TEST_1",
+        "display_text": "Movies DB sample Test cases",
+        "weightage": 10
+      }
+    ],
+    "multimedia": [],
+    "solutions_metadata": [
+      {
+        "ide_session_id": "1373e4e2-fec2-4659-8280-1ec83e0c3b2c",
+        "order": 1,
+        "title": {
+          "content": "Movie Database App",
+          "content_type": "MARKDOWN"
+        },
+        "description": {
+          "content": "An approach to develop Movie Database App",
+          "content_type": "MARKDOWN"
+        }
+      }
+    ],
+    "hints": []
+  }
+]

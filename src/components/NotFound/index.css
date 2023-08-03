@@ -1,0 +1,23 @@
+.notfound-div {
+  height: 100vh;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-hd {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: #334155;
+}
+.notfound-para {
+  font-family: Inter;
+  font-size: 20px;
+  color: #475569;
+  text-align: center;
+  line-height: 32px;
+}
